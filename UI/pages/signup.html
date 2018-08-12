@@ -9,16 +9,20 @@
 </head>
 
 <body>
-    <main class="login">
-        <div class="main login">
-            <div class="login-container">
+    <main class="signup">
+        <div class="main signup">
+            <div class="signup-container">
                 <div class="logo">
                     <span class="logo-text">
                         StackOverflow~Lite
                     </span>
                 </div>
-                <div class="login-form">
+                <div class="signup-form">
                     <form action="">
+                        <div class="field-group">
+                            <label>Username</label>
+                            <input type="text" class="field" placeholder="Enter your username">
+                        </div>
                         <div class="field-group">
                             <label>Email</label>
                             <input type="email" class="field" placeholder="Enter your email">
@@ -28,14 +32,15 @@
                             <input type="password" class="field" placeholder="Enter your password">
                         </div>
                         <div class="field-group">
-                            <button type="submit" class="btn btn-login">Login</button>
+                            <label>Confirm Password</label>
+                            <input type="password" class="field" placeholder="Confirm your password">
                         </div>
                         <div class="field-group">
-                            <p class="reset">Forgot Password?
-                                <a href="#">Reset!</a>
-                            </p>
-                            <p class="reset">Don't have an account?
-                                <a href="signup.html">signup!</a>
+                            <button type="submit" class="btn btn-login">Signup</button>
+                        </div>
+                        <div class="field-group">
+                            <p class="reset">Already have an account?
+                                <a href="login.html">signin!</a>
                             </p>
                         </div>
                     </form>
