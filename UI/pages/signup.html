@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>StackOverflow | Lite</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+</head>
+
+<body>
+    <main class="signup">
+        <div class="main signup">
+            <div class="signup-container">
+                <div class="logo">
+                    <span class="logo-text">
+                        StackOverflow~Lite
+                    </span>
+                </div>
+                <div class="signup-form">
+                    <form action="">
+                        <div class="field-group">
+                            <label>Username</label>
+                            <input type="text" class="field" placeholder="Enter your username">
+                        </div>
+                        <div class="field-group">
+                            <label>Email</label>
+                            <input type="email" class="field" placeholder="Enter your email">
+                        </div>
+                        <div class="field-group">
+                            <label>Password</label>
+                            <input type="password" class="field" placeholder="Enter your password">
+                        </div>
+                        <div class="field-group">
+                            <label>Confirm Password</label>
+                            <input type="password" class="field" placeholder="Confirm your password">
+                        </div>
+                        <div class="field-group">
+                            <button type="submit" id="signup-btn" class="btn btn-login">Signup</button>
+                        </div>
+                        <div class="field-group">
+                            <p class="reset">Already have an account?
+                                <a href="login.html">signin!</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bottom">
+        &copy;2018 StackOverflow-Lite Inc.
+    </footer>
+    <script>
+
+        var signupBtn = document.getElementById("signup-btn");
+        signupBtn.addEventListener('click', function (event) {
+            window.location.href = "user.html";
+            event.preventDefault();
+        })
+
+    </script>
+</body>
+
+</html>
