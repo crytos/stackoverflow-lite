@@ -28,7 +28,7 @@
                             <input type="password" class="field" placeholder="Enter your password">
                         </div>
                         <div class="field-group">
-                            <button type="submit" class="btn btn-login">Login</button>
+                            <button id="login-btn" type="button" class="btn btn-login">Login</button>
                         </div>
                         <div class="field-group">
                             <p class="reset">Forgot Password?
@@ -46,6 +46,15 @@
     <footer class="bottom">
         &copy;2018 StackOverflow-Lite Inc.
     </footer>
+    <script>
+
+        var loginBtn = document.getElementById("login-btn");
+        loginBtn.addEventListener('click', function (event) {
+            window.location.href = "user.html";
+            event.preventDefault();
+        })
+
+    </script>
 </body>
 
 </html>
