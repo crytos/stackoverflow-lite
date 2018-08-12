@@ -6,6 +6,12 @@ body {
   font-family: Helvetica, sans-serif;
   margin: 0;
   color: #6f6e6e;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #ff0000;
 }
 
 .nav {
@@ -37,7 +43,7 @@ body {
   box-shadow: 0px 0px 30px 0px #e9f0f7;
 }
 
-.navbar > .top-nav .logo {
+.logo {
   padding: 1.1rem;
   cursor: pointer;
   margin-bottom: 10px;
@@ -150,6 +156,7 @@ body {
   justify-content: space-between;
   border-radius: 4px;
   color: #ff0000;
+  font-size: 14px;
 }
 
 .answer.voted {
@@ -193,6 +200,7 @@ footer {
   justify-content: center;
   color: #959393;
   align-items: center;
+  font-size: 14px;
 }
 
 .pushed {
@@ -221,7 +229,7 @@ footer {
 }
 .answer.answered .footer {
   display: flex;
-  font-size: 15px;
+  font-size: 14px;
 }
 .answer.answered .footer .accepted {
   color: #0bac0b;
@@ -238,8 +246,10 @@ footer {
   border-right: none;
   border-bottom: 2px solid #f00;
   outline: none;
-  padding: 10px;
+  padding: 15px;
   box-shadow: -4px 5px 9px #d0dbe7;
+  width: 100%;
+  border-radius: 4px;
 }
 .field:focus {
   outline: none;
@@ -264,4 +274,56 @@ button.btn {
 
 button:focus {
   outline: none;
+}
+
+/* Login */
+
+.main.login {
+  justify-content: center;
+  align-items: center;
+}
+
+main.login {
+  height: 90vh;
+}
+
+.login-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 4px;
+}
+/* Signup */
+
+.main.signup {
+  justify-content: center;
+  align-items: center;
+}
+
+main.signup {
+  /* height: 90vh; */
+}
+
+.signup-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+footer.bottom {
+  /* height: 10vh; */
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+form .field-group {
+  margin-bottom: 1rem;
+}
+
+.action {
+  cursor: pointer;
+  text-decoration: overline;
+  color: #00bcd4;
 }
